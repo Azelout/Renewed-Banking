@@ -20,11 +20,12 @@
 
 <section class="account" on:click={()=>handleAccountClick(account.id)} on:keydown={()=>{}}>
     <h4>
-        {account.type}{$translations.account}/ {account.id}
+        {account.type_label} - {account.name}
     </h4>
     <h5>
-        {account.type}{$translations.account}<br />
-        <span>{account.name}</span>
+        <span>RIB: {account.accountNumber}</span>
+        <!--<br/>{account.type}{$translations.account}<br/> -->
+        <!-- <span>{account.name}</span> -->
     </h5>
 
     <div class="price">
